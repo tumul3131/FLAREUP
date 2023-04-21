@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <script type="text/javascript" src="JS/myscript.js"></script>
+        <link rel="stylesheet" href="form.css">
+
+        <style>
+        .mynav{
+            background-color: rgb(98,98,98);
+            color:green;
+        }
+        .container{
+            max-width: 1065px;
+            padding: 10px;
+            margin: 50px auto 0;
+            border: black;
+            border-radius: 5px 25px 25px 25px;
+        }
+        body {
+            background: beige;
+            background-image:url('3-7.jpg');
+            background-attachment:fixed;
+            background-size: 100% 100%;
+        }
+        .label{
+            color:#034693;
+        }
+       
+    </style>
+    </head>
+
+    <body >
+        <header>
+
+        <nav class="mynav navbar navbar-expand-lg" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color:white">
+                    <h4>FLARE-UP</h4>
+                </a>
+                <div class="collapse navbar-collapse align-content-end" id="navbarToggle">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html" style="color: white;">Home -></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="second.html" style="color:white"> Register form </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" style="background-color:rgba(0,128,0,1)">
+                <div class="mx-auto" style="color: white; font-size:45px ; width:450px ;">
+                    Investor Sign-Up
+                </div>
+                &nbsp;
+                <div class="div">
+                <form enctype="multipart/form-data" class="well form-horizontal studentRegistration by-form" 
+                action=""
+                method="post" id="contact_form">
+
+                    <!--name-->
+                    <div class="input-group mb-3">
+                        <label for="inputPassword" class="col-sm-2 col-form-label" style="color:white">First Name</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                            <i class="fa fa-user" style=" font-size: 28px;"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" id="firstname" placeholder="First Name" name="Firstname"  required value="">
+                        <br><small id="f_name_error" style="color:red"></small>
+                      </div>
+
+                    <!--last name-->
+                    <div class="input-group mb-3">
+                        <label for="inputPassword" class="col-sm-2 col-form-label" style="color:white">Last Name</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                            <i class="fa fa-user" style="font-size: 28px;"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="Lastname"  required value="">
+                    </div>
+
+                    <!--gender-->
+                    <div class="input-group mb-3">
+                        <label for="gender" class="col-sm-2 col-form-label" style="color:white">Gender</label>
+                        <div class="form-control input-group-prepend">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="radio1" name="Gender" value="Male">
+                                <label class="form-check-label" for="radio1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="radio2" name="Gender" value="Female" >
+                                <label class="form-check-label" for="radio2">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="radio3" name="Gender" value="Others">
+                                <label class="form-check-label" for="radio3">Others</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--dob-->
+                    <div class="input-group mb-3">
+                        <label for="dob" class="col-sm-2 col-form-label" style="color:white">Date of Birth</label>
+                        <input type="date" id="date" name="Dob" minlength="6" maxlength="6"  required value="">
+                    </div>
+                    
+                    <!--phone-->
+                    <div class="input-group mb-3">
+                        <label for="inputPassword" class="col-sm-2 col-form-label" style="color:white">Phone Number</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1" >
+                            <i class="fa fa-phone-square" style="font-size: 28px;"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" id="phone" placeholder="Mobile Number" name="Phone" required
+                        value="">
+                    </div>
+                    
+                    <!--email-->
+                    <div class="input-group mb-3">
+                        <label for="inputPassword" class="col-sm-2 col-form-label" style="color:white">E-Mail</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"  id="basic-addon1">
+                            <i class="fa fa-envelope-square" style="font-size: 28px;"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control" id="email" placeholder="E-Mail Address" name="Email"
+                        value="">
+                    </div>
+
+                    
+
+                  <button type="submit" class="btn btn-success" id="submit" onclick="changebutton()">Submit</button>
+                  <input type="reset" class="btn btn-danger">
+                </form>
+                </div>
+            </div>
+
+        </header>
+
+        <footer>
+            <div><br></hr> 
+        </footer>
+         
+    </body>
+</html>
